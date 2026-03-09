@@ -1,0 +1,102 @@
+<!DOCTYPE html> 
+<html lang="ar" dir="rtl"> 
+<head>
+    <title>لوفينج هومز - فندق الكلاب</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="لوفينج هومز, فندق الكلاب, حجز فندق للكلاب, مرافق فندق الكلاب, حزم فندق الكلاب">
+    <meta name="author" content="rawaa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../icons/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="accessibility-bar">
+        <button id="increase-font">
+            <i class="fas fa-search-plus"></i> تكبير
+        </button>
+        <!-- زر تكبير الخط -->
+        <button id="decrease-font">
+            <i class="fas fa-search-minus"></i> تصغير
+        </button>
+        <!-- زر تصغير الخط -->
+        <button id="reset-font">
+            <i class="fas fa-font"></i> إعادة
+        </button>
+        <!-- زر لإعادة حجم الخط للوضع الافتراضي -->
+        <button id="night-mode">
+            <i class="fas fa-moon"></i> ليلي
+        </button>
+        <!-- زر الوضع الليلي -->
+    </div>
+    <header>
+        <!-- رأس الصفحة ويحتوي على الشعار وقائمة التنقل -->
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="لوفينج هومز">
+                <span>لوفينج هومز</span>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <!-- زر فتح القائمة في الأجهزة الصغيرة -->
+            <nav>
+                <!-- قائمة التنقل بين صفحات الموقع -->
+                <ul id="nav-menu">
+                    <li> <a href="index.html" class="active">الرئيسية</a></li>
+                    <li> <a href="facilities.html">المرافق</a> </li>
+                    <li> <a href="packages.html">الحزم</a> </li>
+                    <li> <a href="booking.html">الحجز</a> </li>
+                    <li> <a href="about.html">من نحن</a> </li>
+                    <li> <a href="contact.html">تواصل معنا</a> </li>
+                    <li> <a href="faq.html">الأسئلة</a> </li>
+                    <li> <a href="privacy.html">الخصوصية</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>لوفينج هومز</h1>
+            <p>
+                فندق فاخر للكلاب .. راحة وأمان كلبك في بيئة طبيعية وخدمات راقية
+            </p>
+            <a href="booking.html" class="btn">احجز الآن</a>
+            <a href="facilities.html" class="btn btn-outline" style="margin-right: 1rem;">
+                استكشف المرافق
+            </a>
+        </section>
+        <section style="text-align: center; margin-top: 2rem;">
+            <img 
+            src="images/hero-dog.png" 
+            alt="كلب سعيد في فندق"
+            style="max-width:100%; border-radius:30px; box-shadow:var(--shadow);">
+            <!-- صورة تعبر عن راحة الكلاب في الفندق -->
+        </section>
+    </main>
+    <footer>
+        <p>
+            جميع الحقوق محفوظة &copy; 2026 - لوفينج هومز فندق الكلاب | تصميم رواء رائد الخالدي
+        </p>
+        <!-- معلومات حقوق النشر -->
+    </footer>
+    <div class="fixed-access">
+        <!-- أزرار وصول سريعة تظهر بشكل ثابت في الصفحة -->
+        <button id="night-mode-float">
+            <i class="fas fa-moon"></i>
+        </button>
+        <!-- زر الوضع الليلي -->
+        <button id="increase-font-float">
+            <i class="fas fa-plus"></i>
+        </button>
+        <!-- زر تكبير الخط -->
+        <button id="decrease-font-float">
+            <i class="fas fa-minus"></i>
+        </button>
+        <!-- زر تصغير الخط -->
+    </div>
+    <script src="js/script.js"></script>
+    <!--JavaScript لإضافة تغيير الخط والوضع الليلي -->
+</body>
+</html>

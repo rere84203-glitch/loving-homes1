@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <title>لوفينج هومز - فندق الكلاب</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="لوفينج هومز, فندق الكلاب, حجز فندق للكلاب, مرافق فندق الكلاب, حزم فندق الكلاب">
+    <meta name="author" content="rawaa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../icons/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="accessibility-bar">
+        <button id="increase-font"><i class="fas fa-search-plus"></i> تكبير</button>
+        <button id="decrease-font"><i class="fas fa-search-minus"></i> تصغير</button>
+        <button id="reset-font"><i class="fas fa-font"></i> إعادة</button>
+        <button id="night-mode"><i class="fas fa-moon"></i> ليلي</button>
+    </div>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="لوفينج هومز">
+                <span>لوفينج هومز</span>
+            </div>
+            <div class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></div>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="facilities.html">المرافق</a></li>
+                    <li><a href="packages.html" class="active">الحزم</a></li>
+                    <li><a href="booking.html">الحجز</a></li>
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="contact.html">تواصل معنا</a></li>
+                    <li><a href="faq.html">الأسئلة</a></li>
+                    <li><a href="privacy.html">الخصوصية</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+             <!-- قسم عرض حزم الإقامة -->
+            <h2 class="section-title">حزم الإقامة</h2>
+            <div class="packages-grid">
+                <div class="package-card">
+                <!-- شبكة لتنظيم الحزم بشكل بطاقات -->
+                    <img class="package-img" src="images/gallery1.png" alt="حزمة اليوم">
+                    <div class="package-content">
+                        <h3>حزمة اليوم الواحد</h3>
+                        <ul>
+                            <!-- قائمة الخدمات المتوفرة في الحزمة -->
+                            <li><i class="fas fa-check"></i> المشي مرتين يوميًا</li>
+                            <li><i class="fas fa-check"></i> منطقة لعب خارجية </li>
+                            <li><i class="fas fa-check"></i> مسار الرشاقة </li>
+                            <li><i class="fas fa-check"></i>حفر حفرة في الرمل </li>
+                        </ul>
+                        <div class="package-price">$40</div>
+                        <!-- سعر الحزمة -->
+                        <a href="booking.html?package=day" class="btn">احجز الآن</a>
+                        <!-- زر الانتقال لصفحة الحجز -->
+                    </div>
+                </div>
+                <div class="package-card">
+                    <img class="package-img" src="images/gallery2.png" alt="حزمة كلاسيك">
+                    <div class="package-content">
+                        <h3>الحزمة الكلاسيكية</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> المشي ثلاث مرات/ ممارسة ثلاثة أنشطة</li>
+                            <li><i class="fas fa-check"></i> حظيرة لعب داخلية </li>
+                            <li><i class="fas fa-check"></i> جلسة حلاقة وتنظيف</li>
+                            <li><i class="fas fa-check"></i> منطقة استرخاء </li>
+                        </ul>
+                        <div class="package-price">$70/ليلة</div>
+                        <a href="booking.html?package=classic" class="btn">احجز الآن</a>
+                    </div>
+                </div>
+                <div class="package-card">
+                    <img class="package-img" src="Images/galary3.jpg" alt="حزمة مميزة">
+                    <div class="package-content">
+                        <h3>الحزمة المميزة</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> المشي أربعة مرات/ ممارسة أربع أنشطة يوميًا</li>
+                            <li><i class="fas fa-check"></i> مساحة عشب خاصة</li>
+                            <li><i class="fas fa-check"></i> تحديثات/ صور يومية</li>
+                            <li><i class="fas fa-check"></i> مكافآت</li>
+                        </ul>
+                        <div class="package-price">$150/ليلة</div>
+                        <a href="booking.html?package=deluxe" class="btn">احجز الآن</a>
+                    </div>
+                </div>
+                <div class="package-card">
+                    <img class="package-img" src="images/dog.jpg" alt="حزمة بريميوم">
+                    <div class="package-content">
+                        <h3>حزم مخصصة للإقامات الطويلة</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> اللكلاب ذات متطلبات إضافية</li>
+                            <div class="package-price">حسب مدة الإقامة، الرجاء التواصل مع الفندق لأخذ التفاصيل</div>
+                            <a href="contact.html" class="btn">تواصل معنا</a>
+                            <!-- زر للتواصل مع الفندق -->
+                        </ul>
+                    </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2026 - لوفينج هومز فندق الكلاب | تصميم رواء رائد الخالدي</p>
+    </footer>
+    <div class="fixed-access">
+        <button id="night-mode-float"><i class="fas fa-moon"></i></button>
+        <button id="increase-font-float"><i class="fas fa-plus"></i></button>
+        <button id="decrease-font-float"><i class="fas fa-minus"></i></button>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <title>لوفينج هومز - فندق الكلاب</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="لوفينج هومز, فندق الكلاب, حجز فندق للكلاب, مرافق فندق الكلاب, حزم فندق الكلاب">
+    <meta name="author" content="rawaa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../icons/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- شريط إمكانية الوصول لتسهيل استخدام الموقع -->
+    <div class="accessibility-bar">
+        <button id="increase-font"><i class="fas fa-search-plus"></i> تكبير</button>
+        <button id="decrease-font"><i class="fas fa-search-minus"></i> تصغير</button>
+        <button id="reset-font"><i class="fas fa-font"></i> إعادة</button>
+        <button id="night-mode"><i class="fas fa-moon"></i> ليلي</button>
+    </div>
+    <header>
+        <!-- رأس الصفحة ويحتوي على الشعار وقائمة التنقل -->
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="لوفينج هومز">
+                <span>لوفينج هومز</span>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <!-- قائمة التنقل بين صفحات الموقع -->
+                <ul id="nav-menu">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="facilities.html" class="active">المرافق</a></li>
+                    <li><a href="packages.html">الحزم</a></li>
+                    <li><a href="booking.html">الحجز</a></li>
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="contact.html">تواصل معنا</a></li>
+                    <li><a href="faq.html">الأسئلة</a></li>
+                    <li><a href="privacy.html">الخصوصية</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2 class="section-title">مرافق راقية لكلبك</h2>
+            <!-- عنوان القسم الذي يعرض مرافق الفندق -->
+            <div class="facilities-grid">
+            <!-- شبكة لعرض المرافق بطريقة مرتبة -->
+                <div class="facility-card">
+                    <img src="images/grooming.jpg" alt="صالة الحلاقة">
+                    <h3>صالة الحلاقة والمنتجع</h3>
+                    <p>عناية متكاملة وتصفيف بأيدي خبيرة.</p>
+                </div>
+                <div class="facility-card">
+                    <img src="images/room.jpg" alt="غرف فاخرة">
+                    <h3>غرف بتدفئة وتبريد</h3>
+                    <p>تدفئة وتبريد تحت الأرضية مع تلفزيون.</p>
+                </div>
+                <div class="facility-card">
+                    <img src="images/shuttle.jpg" alt="خدمة التوصيل">
+                    <h3>خدمة التوصيل</h3>
+                    <p>نوفر خدمة نقل الكلاب من وإلى الفندق.</p>
+                </div>
+                <div class="facility-card">
+                    <img src="images/grass.jpg" alt="مراعي خارجية">
+                    <h3>مراعي خارجية آمنة</h3>
+                    <p>مساحات خضراء مسورة للعب والجري.</p>
+                </div>
+                <div class="facility-card">
+                    <img src="images/vet.jpg" alt="خدمات بيطرية">
+                    <h3>خدمات بيطرية 24 ساعة</h3>
+                    <p>رعاية صحية وإسعافات أولية.</p>
+                </div>
+                <div class="facility-card">
+                    <img src="images/forest-walk.jpg" alt="تمشية في الغابات">
+                    <h3>تمشية في الغابات</h3>
+                    <p>جولات يومية في الطبيعة تحت إشراف.</p>
+                </div>
+                <div class="facility-card">
+                    <img src="images/grass.jpg" alt="مساحة عشب خاصة">
+                    <h3>مساحة عشب خاصة</h3>
+                    <p>لكل كلب مساحة عشب خاصة للخصوصية.</p>
+                </div>
+                <div class="facility-card">
+                    <img src="images/indoor-play.png" alt="حظيرة لعب داخلية">
+                    <h3>حظيرة لعب داخلية</h3>
+                    <p>منطقة لعب داخلية مجهزة بألعاب تفاعلية.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2026 - لوفينج هومز فندق الكلاب | تصميم رواء رائد الخالدي</p>
+    </footer>
+    <!-- أزرار وصول سريعة تظهر بشكل ثابت في الصفحة -->
+    <div class="fixed-access">
+        <button id="night-mode-float"><i class="fas fa-moon"></i></button>
+        <button id="increase-font-float"><i class="fas fa-plus"></i></button>
+        <button id="decrease-font-float"><i class="fas fa-minus"></i></button>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
