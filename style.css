@@ -1,0 +1,228 @@
+* {
+    margin: 0; /* إزالة الهوامش الافتراضية */
+    padding: 0; /* إزالة المسافات الداخلية الافتراضية */
+    box-sizing: border-box; /* يجعل الحساب يشمل الحدود  */
+    font-family: 'Cairo', sans-serif; /* الخط المستخدم في الموقع */}
+/*المتغيرات العامة للألوان والتصميم */
+:root {
+    --primary-dark: #a2c3e2; /* اللون الأساسي */
+    --accent-gold: #e4d6b9; /* لون مميز للعناصر المهمة */
+    --light-gray: #F5F5F5; /* لون خلفية الصفحات */
+    --text-dark: #375ca1; /* لون النص الأساسي */
+    --text-light: #ffffff; /* لون النص الفاتح */
+    --btn-blue: #081f35; /* لون زر أزرق */
+    --shadow: 0 4px 12px rgba(0,0,0,0.1); /* ظل للعناصر */}
+/*إعدادات الصفحة الرئيسية */
+body {
+    background-color: var(--light-gray); /* لون الخلفية */
+    color: var(--text-dark); /* لون النص */
+    line-height: 1.6; /* المسافة بين الأسطر */
+    transition: background-color 0.3s, color 0.3s; /* انتقال ناعم عند تغيير الألوان */
+    font-size: 16px; /* حجم الخط الافتراضي */}
+/*الوضع الليلي */
+body.night-mode {
+    background-color: #121212; /* خلفية داكنة */
+    color: #f0f0f0; /* لون النص في الوضع الليلي */}
+body.night-mode header,
+body.night-mode nav,
+body.night-mode footer {
+    background-color: #1e1e1e !important; /* تغيير لون الخلفية */}
+body.night-mode .facility-card,
+body.night-mode .package-card,
+body.night-mode .booking-form,
+body.night-mode .faq-item,
+body.night-mode .privacy-content {
+    background-color: #2a2a2a;
+    color: #f0f0f0;
+    border-color: #444;}
+body.night-mode .section-title {
+    color: var(--accent-gold); /* تغيير لون العنوان */}
+/*شريط أدوات الوصول */
+.accessibility-bar {
+    background-color: var(--primary-dark);
+    padding: 0.5rem 2rem;
+    display: flex;
+    justify-content: flex-end; /* محاذاة الأزرار لليمين */
+    gap: 0.8rem;
+    flex-wrap: wrap;}
+.accessibility-bar button {
+    background: transparent;
+    border: 1px solid var(--accent-gold);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s;}
+.accessibility-bar button:hover {
+    background-color: var(--accent-gold);
+    color: #000;}
+/*رأس الموقع (Header) */
+header {
+    background-color: var(--primary-dark);
+    color: white;
+    padding: 1rem 2rem;
+    position: sticky; /* يبقى مثبت عند التمرير */
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--shadow);}
+/* حاوية عناصر الرأس */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;}
+/* الشعار */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;}
+.logo img {
+    height: 50px;}
+.logo span {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent-gold);}
+/* القائمة (Navigation) */
+nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.2s;}
+nav ul li a:hover,
+nav ul li a.active {
+    color: var(--accent-gold);}
+/* زر القائمة في الهاتف */
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;}
+/*توافق القائمة مع الهاتف */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;}
+    nav ul.show {
+        display: flex; /* إظهار القائمة عند الضغط */}
+    .menu-toggle {
+        display: block;}}
+/*الأقسام العامة*/
+section {
+    padding: 4rem 2rem;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+/* عنوان القسم */
+.section-title {
+    font-size: 2.5rem;
+    color: var(--primary-dark);
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+}
+/* خط تحت العنوان */
+.section-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: var(--accent-gold);
+    margin: 0.5rem auto 0;}
+/*الأزرار*/
+.btn {
+    display: inline-block;
+    background-color: var(--accent-gold);
+    color: #000;
+    font-weight: 700;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: none;
+    cursor: pointer;}
+.btn-blue {
+    background-color: var(--btn-blue);
+    color: white;}
+.btn-outline {
+    background: transparent;
+    border: 2px solid var(--accent-gold);
+    color: var(--accent-gold);}
+.btn:hover {
+    transform: scale(1.05); /* تكبير بسيط */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);}
+/*قسم الصفحة الرئيسية (Hero) */
+.hero {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, #123456 100%);
+    color: white;
+    text-align: center;
+    padding: 6rem 2rem;
+    border-radius: 0 0 50px 50px;}
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;}
+.hero p {
+    font-size: 1.4rem;
+    max-width: 700px;
+    margin: 0 auto 2rem;}
+/*بطاقات المرافق*/
+.facilities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;}
+.facility-card {
+    background: white;
+    border-radius: 20px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    text-align: center;
+    transition: transform 0.3s;}
+.facility-card:hover {
+    transform: translateY(-5px); /* حركة بسيطة عند المرور */}
+.facility-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 1rem;}
+/*التذييل (Footer)*/
+footer {
+    background-color: var(--primary-dark);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;}
+/*الأزرار لإمكانية الوصول */
+.fixed-access {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    gap: 10px;
+    z-index: 999;}
+.fixed-access button {
+    background-color: var(--primary-dark);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    transition: 0.2s;}
+.fixed-access button:hover {
+    background-color: var(--accent-gold);
+    color: black;}
+/*االتوافق مع الأجهزة  */
+@media (max-width: 768px) {
+    .hero h1 {font-size: 2.5rem;}
+    .contact-grid {grid-template-columns: 1fr;}
+    .about-content {flex-direction: column;}}
